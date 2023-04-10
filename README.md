@@ -18,20 +18,20 @@ conda activate DiffusionModels
 
 # step3. install pytorch
 # if on MacOSX
-conda install pytorch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 -c pytorch
+pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1
 # if on Linux/Windows, CUDA 11.6
-conda install pytorch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 pytorch-cuda=11.6 -c pytorch -c nvidia
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
 # if on Linux/Windows, CUDA 11.7
-conda install pytorch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 pytorch-cuda=11.7 -c pytorch -c nvidia
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 # if on Linux/Windows, CPU Only
-conda install pytorch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 cpuonly -c pytorch 
+pip install torch==1.13.1+cpu torchvision==0.14.1+cpu torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cpu
 
 # step4. install other packages
 pip install diffusers
 
 ```
 
-### setup environment (easy way)
+### setup environment (on Linux/Windows, CUDA 11.7)
 ```shell
 # step1. create anaconda environment 
 conda create -n DiffusionModels python=3.8
@@ -40,7 +40,8 @@ conda create -n DiffusionModels python=3.8
 conda activate DiffusionModels
 
 # step3. using requirements.txt
-pip install -r requirements.txt
+pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu117
+
 ```
 
 ## Files

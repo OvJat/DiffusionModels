@@ -1,19 +1,7 @@
 accelerate==0.17.1
-cached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_1615209429212/work
-certifi==2022.12.7
-cftime @ file:///home/conda/feedstock_root/build_artifacts/cftime_1666833813766/work
-charset-normalizer==3.1.0
-cmake==3.26.0
 diffusers==0.14.0
 filelock==3.10.0
-h5py @ file:///home/conda/feedstock_root/build_artifacts/h5py_1675704810568/work
 huggingface-hub==0.13.2
-idna==3.4
-importlib-metadata==6.1.0
-lit==15.0.7
-mpmath==1.3.0
-netCDF4 @ file:///home/conda/feedstock_root/build_artifacts/netcdf4_1678981210452/work
-numpy @ file:///home/conda/feedstock_root/build_artifacts/numpy_1675642515540/work
 packaging==23.0
 Pillow==9.4.0
 psutil==5.9.4
